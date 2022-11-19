@@ -9,10 +9,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val contactsList = ContactsList()
+        var contactsList = ContactsList()
 
         supportFragmentManager.beginTransaction()
-            .replace(R.id.frame, contactsList)
+            .add(R.id.frame, contactsList).commit()
     }
 
 }
