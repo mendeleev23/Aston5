@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/Contact"
+    android:background="#00d4f0"
     tools:context=".ContactsList">
 
     <androidx.constraintlayout.widget.ConstraintLayout

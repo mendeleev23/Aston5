@@ -34,8 +34,9 @@ class Contact : Fragment() {
         }
     }
 
+
     private fun setNewFragment(contact: ContactStorage){
-        requireActivity().supportFragmentManager.beginTransaction()
+        requireActivity().supportFragmentManager.beginTransaction().remove(this)
             .replace(R.id.frame, ContactsList.newInstance(contact=contact)).commit()
     }
 

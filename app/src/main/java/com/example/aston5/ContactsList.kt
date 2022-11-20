@@ -68,7 +68,7 @@ class ContactsList : Fragment(){
 
     private fun setNewFragment(contact: ContactStorage){
         requireActivity().supportFragmentManager.beginTransaction().addToBackStack("list")
-            .replace(R.id.frame, Contact.newInstance(contact=contact)).commit()
+            .replace(R.id.frame2, Contact.newInstance(contact=contact)).remove(this).commit()
     }
 
 

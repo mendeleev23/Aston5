@@ -2,7 +2,6 @@ package com.example.aston5
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.FrameLayout
 import androidx.core.view.contains
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        if (findViewById<FrameLayout>(R.id.frame).contains(findViewById(R.id.Contact))){
+        if (findViewById<FrameLayout>(R.id.frame2).contains(findViewById(R.id.Contact))){
             supportFragmentManager.popBackStack()
         }
     }
